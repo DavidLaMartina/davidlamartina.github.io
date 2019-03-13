@@ -44,6 +44,7 @@
                    <span class="icon-bar"></span>
                </button>
                <a class="navbar-brand" href="#page-top">{{ site.name }}</a>
+               <a href="mailto:{{site.email}}" class="btn-social btn-outline"><i class="glyphicon glyphicon-envelope"></i></a>
                {% for network in site.social %}
                <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
                {% endfor %}
@@ -96,7 +97,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; {{ site.name }} 20{{ site.time | date: '%y' }}
+                        Copyright &copy; {{ site.name }} 20{{ site.time | date: '%y' }}<br>
+                        Site template credit to <a href="https://github.com/chuckgroom/onepage-bio">Chuck Groom</a>
                     </div>
                 </div>
             </div>
